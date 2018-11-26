@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
+html,body{
+    margin: 0%;
+    font-family: 'Roboto Mono', monospace;
+}
+.btn{
+    background-color: inherit;
+    border: none;
+    outline: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: 1.2em;
+    padding: 10px 12px;
+}
+
+.be-red{
+    background-color: #0A603D;
+}
+.white{
+    color: white
+}
+.large-padding{
+    padding: 8px 7px
+}
+
+a,a:visited{
+    color: inherit;
+    text-decoration: none;
+}
+
+.no-margin{
+    margin: 0%;
+}
+
+#logo{
+    font-size: 1.3em;
+}
+
+.field,.top-space,.actions{
+    margin-top: 2em;
+}
+
+.form-control{
+    border: none;
+    border-bottom: 1px solid;
+    outline: none;
+    width: 100%;
+    display: block;
+    padding: 10px 0px;
+    font-size: 1.2em;
+}
+
+.red{
+     color: red !important;
+}
+
+.text-left{
+    text-align: left;
+}
+.prime{
+    margin-left: 3%;
+    margin-top: -1%;
+}
+
+.star{
+    
+    margin-top: 1em;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    
+}
+.bg-idm{
+    margin-top: 2.2em;
+    color: rgb(252, 249, 249);
+    font-size:16px;
+    
+    margin-right: 70%;
+}
+
+.img{
+    background-image: url(https://static.tumblr.com/b53da857a929276fa26ab16f65331636/x0nnuui/vPfpcest2/tumblr_static_filename_640_v2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+.navcolor{
+     background-color: #3F5866;
+}
+
+.color{
+     color: rgb(255, 0, 128);
+}
+.title{
+     color: rgb(246, 249, 250) !important;
+}
+
+.cold{
+    margin-right: 90%;
+    color: white;
+    text-align: center;
+    background-color: #3F5866;
+}
+.g{
+    color: azure;
+    background-color: rgb(122, 126, 125)
+}
+.f{
+    color: black;
+    text-align: center;
+    font-size: 18px;
+   font-family: 'Ranga', cursive;
+ 
+}
+
+

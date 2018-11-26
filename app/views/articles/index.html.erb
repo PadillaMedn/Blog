@@ -1,0 +1,9 @@
+<div class="container btn be-red white " style="margin-top:2%;text-align:center">
+<%= link_to "Crear nuevo",new_article_path %>
+</div>
+<% @articles.each do |article|%>
+<h1><%=link_to article.title, article %></h1>
+<div>
+   <%= article.body %> 
+</div>
+<% end %>

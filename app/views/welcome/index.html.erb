@@ -1,0 +1,52 @@
+<h3>Bienvenido <%= current_user.email%></h3>
+<div class="container g">
+
+     <% if !user_signed_in? %>
+          <div class="row ">
+          <div class="col-md-8 text-center">
+               <h2 class="title">Bienvenido y Gracias por visitar el blog. Aqui puedes comentar articulos de otras personas y al igual puedes publicar
+                                  tus propios articulos espero que sea de tu agrado.<h2>
+                    <div class="fa">
+                         <div class="card center-block" style="width: 18rem;">
+                              <img class="card-img-top" src="https://burst.shopifycdn.com/photos/taking-notes-at-desk_373x.progressive.jpg" alt="Card image cap">
+                              <div class="card-body">
+                                   <h4 class="card-text title">Registrate y disfruta</h4>
+                              </div>
+                         </div>
+                    </div>
+          </div>
+
+          <div class="col-md-4 text-center">
+             <h2 class="title font-italic" style="margin-top:35%">Registrate a nuestra comunidad se parte de nuestra famila</h2>
+             <h3 class=" color"> Comenzar!!</h3>
+          </div>
+          </div>
+     <% else %>
+     <div class="row ">
+          <div class="col-md-8 text-center ">
+               <h2 class="title">Bienvenido!!! Disfruta de los comentarios y opiniones de los demas usuarios.<h2>
+               <div class="fa">
+                    <div class="card" style="width: 18rem;margin-left:50%">
+                         <img class="card-img-top" src="https://pbs.twimg.com/profile_images/906041975987740673/Qko8YddC_400x400.jpg" alt="Card image cap">
+                         <div class="card-body">
+                              <h4 class="card-text title">Encuentra formas de pensar distintas y comparte las tuyas!!</h4>
+                         </div>
+
+                    </div>
+               </div>
+               
+          </div>
+
+         
+
+          </div>
+
+
+     
+     </div>
+
+     <% end %>
+</div>
+<footer class="f">
+Blog Realizado por : Erick Padilla
+</footer>

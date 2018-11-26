@@ -1,0 +1,31 @@
+<header>
+    <nav class="be-red white large-padding">
+       <ul class="no-list row center-xs middle-xs">
+         <div class="col-md">
+            <h1 class="no-margin" id="logo">  <%= link_to "MyBlog", root_path%></h1>
+         </div>
+         
+         <h4 class="col-md">
+             <%= link_to "Articulos", articles_path%>
+         </h4>
+         <h4 class="col-md">
+            <%= link_to "Mis Articulos", myarticles_path %>
+         </h4>
+         
+         <% if user_signed_in? %>
+          <h4 class="col-md">
+             <%= link_to "Cerrar sesion", destroy_user_session_path,method: :delete %>
+          </h4>
+         <% else %>
+         <h4 class="col-md">
+           <%= link_to "iniciar sesion",new_user_session_path%>
+         </h4>
+         <h4 class="col-md">
+         <%= link_to "Crear cuenta",new_user_registration_path%>
+       </h4>
+         <% end %>
+       </ul>
+    </nav>
+  </header>
+
+  

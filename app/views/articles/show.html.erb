@@ -1,0 +1,37 @@
+<% if current_user.email == @article.user.email %>
+<h2><%= link_to "Eliminar",@article,method: :delete,class:"red" %></h2>
+<div class="btn cold" >
+   <%= link_to "Editar", edit_article_path(@article) %>
+   </div>
+<% end %>
+
+
+<h1><%= @article.title %>  </h1>
+<% unless @article.user.nil?%>
+<p>
+  Escrito por: <%= @article.user.email%>
+</p>
+<p>
+  Visitas: <%= @article.visit_count%>
+</p>
+<%end%>
+<div>
+   <%= @article.body %>
+</div>
+<div class="field">
+ <h3>Comentarios</h3>
+ <%= render "comments/form" %>
+
+  <ul id="comments-box">
+    <% @article.comments.each do |comment|%>
+       <li>
+          <%= comment.body %> - <%= comment.user.email%> 
+         <%= link_to "Eliminar",article_comment_path(@article, comment),method: :delete,class:"red" %>
+         
+         <%= link_to "Editar",[comment.article,comment],class:"red" %>
+       </li>
+  <% end %>
+  </ul>
+</div>
+ 
+ 
